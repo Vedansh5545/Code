@@ -1,0 +1,29 @@
+<!-- index2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task List</h1>
+        <ul id="taskList"></ul>
+        
+        <button onclick="goBack()">Go Back</button>
+        <button onclick="addNewTask()">Add New Task</button>
+    </div>
+    <div id="rescheduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <label for="newTime">Enter new time:</label>
+            <input type="time" id="newTime" name="newTime" required>
+            <button onclick="rescheduleTask()">Reschedule Task</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
