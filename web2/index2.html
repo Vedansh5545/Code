@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedansh Tembhre Portfolio</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="dark-theme">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">Switch Theme</button>
+
+    <!-- Robot Assistant -->
+    <div id="robot">
+        <img src="images2/robot.webp" alt="Robot Assistant">
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="images2/headshot.png" alt="Vedansh Tembhre" class="headshot">
+        <h1 class="fancy-heading">Vedansh Tembhre</h1>
+        <p>Welcome to my interactive portfolio!</p>
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#ai-ml">AI/ML Projects</a>
+            <a href="#webdev">Web Development</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h2>Research</h2>
+        <div class="project">
+            <h3>Published Research</h3>
+            <p>A comprehensive analysis of AI singularity and cybersecurity implications of AI-driven chatbots.</p>
+            <a href="downloads/published_research.zip" download>Download</a>
+        </div>
+        <div class="project">
+            <h3>Ongoing Research</h3>
+            <p>Exploring data quality enhancement for AI models at the edge.</p>
+        </div>
+    </section>
+
+    <!-- AI/ML Projects Section -->
+    <section id="ai-ml">
+        <h2>AI/ML Projects</h2>
+        <div id="ai-graph"></div>
+        <div class="project">
+            <h3>ASL Recognition Platform</h3>
+            <p>Real-time ASL recognition using PyTorch and image recognition.</p>
+            <a href="downloads/asl_project.zip" download>Download Code</a>
+        </div>
+    </section>
+
+    <!-- Web Development Section -->
+    <section id="webdev">
+        <h2>Web Development</h2>
+        <div class="carousel">
+            <div class="carousel-item">Project 1 Placeholder</div>
+            <div class="carousel-item">Project 2 Placeholder</div>
+            <div class="carousel-item">Project 3 Placeholder</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vedansh-tembhre/">LinkedIn</a>
+            <a href="https://github.com/Vedansh5545/Vedansh5545">GitHub</a>
+        </div>
+    </section>
+
+    <script src="js/scripts2.js"></script>
+</body>
+</html>

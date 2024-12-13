@@ -1,0 +1,157 @@
+:root {
+    --coffee-brown: #4E342E;
+    --latte-beige: #D7CCC8;
+    --espresso-black: #2E2E2E;
+    --metallic-silver: #B0BEC5;
+    --robot-blue: #0288D1;
+    --copper-glow: #FF8A65;
+    --steamed-milk-white: #FFFFFF;
+    --coffee-cream: #E0E0E0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body.dark-theme {
+    background-color: var(--espresso-black);
+    color: var(--coffee-cream);
+}
+
+.navbar {
+    background-color: var(--espresso-black);
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--steamed-milk-white);
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--steamed-milk-white);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--steamed-milk-white);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--robot-blue);
+}
+
+.theme-toggle {
+    background-color: var(--metallic-silver);
+    color: var(--espresso-black);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--copper-glow);
+    color: var(--steamed-milk-white);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-image: url('/image/herolightbg.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--steamed-milk-white);
+    min-height: 90vh;
+    overflow: hidden;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 1rem;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: var(--steamed-milk-white);
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: var(--robot-blue);
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: var(--robot-blue);
+    color: var(--steamed-milk-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--copper-glow);
+    transform: scale(1.05);
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--robot-blue);
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
